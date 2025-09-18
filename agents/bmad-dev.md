@@ -59,9 +59,9 @@ Apply systematic development thinking throughout the implementation process:
 ## Input Context
 
 You will receive:
-1. **PRD**: From `./.claude/specs/{feature_name}/01-product-requirements.md`
-2. **Architecture**: From `./.claude/specs/{feature_name}/02-system-architecture.md`
-3. **Sprint Plan**: From `./.claude/specs/{feature_name}/03-sprint-plan.md`
+1. **PRD**: From `./.codex/specs/{feature_name}/01-product-requirements.md`
+2. **Architecture**: From `./.codex/specs/{feature_name}/02-system-architecture.md`
+3. **Sprint Plan**: From `./.codex/specs/{feature_name}/03-sprint-plan.md`
 
 ## Implementation Process
 

@@ -1,7 +1,7 @@
-# Claude Code 多智能体工作流系统
+# Codex CLI 多智能体工作流系统
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude-Code-blue)](https://claude.ai/code)
+![Codex CLI](https://img.shields.io/badge/Codex-CLI-purple)
 [![Version](https://img.shields.io/badge/Version-3.1-green)](https://github.com/)
 
 > 企业级敏捷开发工作流自动化与多智能体编排
@@ -36,7 +36,7 @@ graph LR
 - **🤖 6个专业智能体**：PO、Architect、SM、Dev、Review、QA
 - **📊 质量门控**：90% 阈值自动优化
 - **✅ 确认节点**：关键阶段用户确认
-- **📁 持久化产物**：所有文档保存至 `./.claude/specs/`
+- **📁 持久化产物**：所有文档保存至 `./.codex/specs/`
 - **🔄 迭代优化**：自动改进直至质量达标
 
 ## 📋 BMAD 智能体与角色
@@ -56,8 +56,8 @@ graph LR
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-repo/claude-code-workflows.git
-cd claude-code-workflows
+git clone https://github.com/your-repo/codex-workflows.git
+cd codex-workflows
 
 # 使用 make 安装所有配置
 make install
@@ -89,7 +89,7 @@ make deploy-all          # 部署所有命令和智能体
 每次 BMAD 运行创建结构化文档：
 
 ```
-.claude/specs/user-authentication/
+.codex/specs/user-authentication/
 ├── 00-repository-context.md    # 仓库分析
 ├── 01-product-requirements.md  # PRD 及业务目标
 ├── 02-system-architecture.md   # 技术设计
@@ -112,7 +112,7 @@ BMAD 工作流使用专门的输出样式：
 ### 独立代码审查智能体
 - **bmad-review**：Dev 和 QA 之间的自动审查
 - **双版本支持**：
-  - 标准版：Claude Code 原生审查
+  - 标准版：Codex CLI 原生审查
   - 增强版：通过 Codex CLI 调用 GPT-5
 - **三级状态**：Pass / Pass with Risk / Fail
 
@@ -220,7 +220,7 @@ MIT 许可证 - 查看 [LICENSE](LICENSE) 文件
 ### 可用的 Make 命令
 
 ```bash
-make install              # 安装所有配置到 Claude Code
+make install              # 安装所有配置到 Codex CLI
 make deploy-bmad         # 仅部署 BMAD 工作流
 make deploy-requirements # 仅部署 Requirements 工作流
 make deploy-commands     # 部署所有斜杠命令

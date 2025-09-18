@@ -1,7 +1,7 @@
-# Claude Code Multi-Agent Workflow System
+# Codex CLI Multi-Agent Workflow System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude-Code-blue)](https://claude.ai/code)
+![Codex CLI](https://img.shields.io/badge/Codex-CLI-purple)
 [![Version](https://img.shields.io/badge/Version-3.1-green)](https://github.com/)
 
 > Enterprise-grade agile development workflow automation with multi-agent orchestration
@@ -36,7 +36,7 @@ graph LR
 - **🤖 6 Specialized Agents**: PO, Architect, SM, Dev, Review, QA
 - **📊 Quality Gates**: 90% thresholds with automatic optimization
 - **✅ Approval Points**: User confirmation at critical phases
-- **📁 Persistent Artifacts**: All documents saved to `./.claude/specs/`
+- **📁 Persistent Artifacts**: All documents saved to `./.codex/specs/`
 - **🔄 Iterative Refinement**: Automatic improvement until quality met
 
 ## 📋 BMAD Agents & Roles
@@ -56,8 +56,8 @@ graph LR
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/claude-code-workflows.git
-cd claude-code-workflows
+git clone https://github.com/your-repo/codex-workflows.git
+cd codex-workflows
 
 # Install everything with make
 make install
@@ -89,7 +89,7 @@ make deploy-all          # Deploy all commands and agents
 Each BMAD run creates structured documentation:
 
 ```
-.claude/specs/user-authentication/
+.codex/specs/user-authentication/
 ├── 00-repository-context.md    # Repository analysis
 ├── 01-product-requirements.md  # PRD with business goals
 ├── 02-system-architecture.md   # Technical design
@@ -112,7 +112,7 @@ The BMAD workflow uses a specialized output style that:
 ### Independent Code Review Agent
 - **bmad-review**: Automated review between Dev and QA
 - **Dual Version Support**:
-  - Standard: Native Claude Code review
+  - Standard: Native Codex CLI review
   - Enhanced: GPT-5 via Codex CLI
 - **Three-tier Status**: Pass / Pass with Risk / Fail
 
@@ -220,7 +220,7 @@ MIT License - see [LICENSE](LICENSE) file
 ### Available Make Commands
 
 ```bash
-make install              # Install everything to Claude Code
+make install              # Install everything to Codex CLI
 make deploy-bmad         # Deploy BMAD workflow only
 make deploy-requirements # Deploy Requirements workflow only
 make deploy-commands     # Deploy all slash commands

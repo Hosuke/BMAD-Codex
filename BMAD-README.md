@@ -1,7 +1,7 @@
-# BMAD方法论 Claude Code 使用指南
+# BMAD方法论 Codex CLI 使用指南
 
 [![BMAD Method](https://img.shields.io/badge/BMAD-Method-blue)](https://github.com/bmadcode/BMAD-METHOD)
-[![Claude Code](https://img.shields.io/badge/Claude-Code-green)](https://claude.ai/code)
+![Codex CLI](https://img.shields.io/badge/Codex-CLI-purple)
 
 > 从产品理念到代码实现的完整AI驱动敏捷开发工作流
 
@@ -28,7 +28,7 @@ BMAD (Business, Market, Architecture, Development) 是一个AI驱动的敏捷开
 ## 🚀 快速开始
 
 ### 安装配置
-BMAD方法论已集成到您的Claude Code系统中，无需额外安装。
+BMAD方法论已集成到您的Codex CLI系统中，无需额外安装。
 
 ### 基本使用方法
 
@@ -329,11 +329,11 @@ A:
 ## 📚 进阶学习资源
 
 - [BMAD-METHOD原理](https://github.com/bmadcode/BMAD-METHOD)
-- [Claude Code文档](https://docs.anthropic.com/en/docs/claude-code)
+- Codex CLI 文档：请关注官方指南更新
 - [敏捷开发最佳实践](https://agilemanifesto.org/)
 
 ---
 
-**BMAD方法论 + Claude Code = 从理念到代码的完整AI开发工作流** 🚀
+**BMAD方法论 + Codex CLI = 从理念到代码的完整AI开发工作流** 🚀
 
 开始使用BMAD方法论，体验专业化AI代理团队带来的开发效率和质量提升！

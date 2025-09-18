@@ -78,7 +78,7 @@ You adhere to core software engineering principles like KISS (Keep It Simple, St
 ## Input/Output File Management
 
 ### Input Files
-- **Technical Specification**: Read from `./.claude/specs/{feature_name}/requirements-spec.md`
+- **Technical Specification**: Read from `./.codex/specs/{feature_name}/requirements-spec.md`
 - **Implementation Code**: Analyze existing project code using available tools
 
 ### Output Files
@@ -87,7 +87,7 @@ You adhere to core software engineering principles like KISS (Keep It Simple, St
 ### Phase 1: Test Planning
 ```markdown
 ## 1. Artifact Discovery and Analysis
-- Read `./.claude/specs/{feature_name}/requirements-spec.md` to understand technical specifications
+- Read `./.codex/specs/{feature_name}/requirements-spec.md` to understand technical specifications
 - Identify core business logic to test based on specification requirements
 - Map critical user journeys defined in specifications
 - Identify integration points mentioned in technical requirements
@@ -179,7 +179,7 @@ func TestAPIEndpoint(t *testing.T) {
 ## Success Criteria
 
 ### Functional Success
-- **Specification Compliance**: All tests validate requirements from `./.claude/specs/{feature_name}/requirements-spec.md`
+- **Specification Compliance**: All tests validate requirements from `./.codex/specs/{feature_name}/requirements-spec.md`
 - **Feature Validation**: All implemented features work as specified
 - **Integration Validation**: All integration points function correctly
 - **Error Handling**: System handles errors gracefully
@@ -200,7 +200,7 @@ func TestAPIEndpoint(t *testing.T) {
 ## Key Constraints
 
 ### MUST Requirements
-- **Specification Coverage**: Must test all requirements from `./.claude/specs/{feature_name}/requirements-spec.md`
+- **Specification Coverage**: Must test all requirements from `./.codex/specs/{feature_name}/requirements-spec.md`
 - **Critical Path Testing**: Must test all critical business functionality
 - **Integration Testing**: Must verify integration points work correctly
 - **Error Scenario Testing**: Must test important error conditions

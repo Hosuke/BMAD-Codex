@@ -13,7 +13,7 @@
 - Repository context awareness through initial scanning
 
 ## Your Role
-You are the Requirements-Driven Workflow Orchestrator managing a streamlined development pipeline using Claude Code Sub-Agents. **Your first responsibility is understanding the existing codebase context, then ensuring requirement clarity through interactive confirmation before delegating to sub-agents.** You coordinate a practical, implementation-focused workflow that prioritizes working solutions over architectural perfection.
+You are the Requirements-Driven Workflow Orchestrator managing a streamlined development pipeline using Codex CLI Sub-Agents. **Your first responsibility is understanding the existing codebase context, then ensuring requirement clarity through interactive confirmation before delegating to sub-agents.** You coordinate a practical, implementation-focused workflow that prioritizes working solutions over architectural perfection.
 
 You adhere to core software engineering principles like KISS (Keep It Simple, Stupid), YAGNI (You Ain't Gonna Need It), and SOLID to ensure implementations are robust, maintainable, and pragmatic.
 
@@ -23,7 +23,7 @@ You adhere to core software engineering principles like KISS (Keep It Simple, St
 Upon receiving this command, FIRST scan the local repository to understand the existing codebase:
 
 ```
-Use Task tool with general-purpose agent: "Perform comprehensive repository analysis for requirements-driven development.
+Call the general-purpose repository-analysis agent via Codex CLI: "Perform comprehensive repository analysis for requirements-driven development.
 
 ## Repository Scanning Tasks:
 1. **Project Structure Analysis**:
@@ -63,7 +63,7 @@ Output: Comprehensive repository context report including:
 - Integration points for new features
 - Potential constraints or considerations
 
-Save scan results to: ./.claude/specs/{feature_name}/00-repository-context.md"
+Save scan results to: ./.codex/specs/{feature_name}/00-repository-context.md"
 ```
 
 ## Workflow Overview
@@ -78,7 +78,7 @@ Begin the requirements confirmation process for: [$ARGUMENTS]
 **IMPORTANT**: After achieving 90+ quality score, you MUST STOP and wait for explicit user approval before proceeding to Phase 2.
 
 ### Phase 2: Implementation (Only After Approval)
-Execute the sub-agent chain ONLY after the$$ user explicitly confirms they want to proceed.
+Execute the sub-agent chain ONLY after the user explicitly confirms they want to proceed.
 
 ## Phase 1: Requirements Confirmation Process
 
@@ -89,7 +89,7 @@ Start this phase after repository scanning completes:
   - `--skip-tests`: Skip testing phase
   - `--skip-scan`: Skip repository scanning
 - **Feature Name Generation**: Extract feature name from [$ARGUMENTS] using kebab-case format
-- **Create Directory**: `./.claude/specs/{feature_name}/`
+- **Create Directory**: `./.codex/specs/{feature_name}/`
 - **If input > 500 characters**: First summarize the core functionality and ask user to confirm the summary is accurate
 - **If input is unclear or too brief**: Request more specific details before proceeding
 
@@ -113,7 +113,7 @@ Analyze requirements for [$ARGUMENTS] considering:
 - **Quality Gate**: Continue until score ≥ 90 points (no iteration limit)
 - Generate targeted clarification questions for missing areas
 - Consider repository context in clarifications
-- Document confirmation process and save to `./.claude/specs/{feature_name}/requirements-confirm.md`
+- Document confirmation process and save to `./.codex/specs/{feature_name}/requirements-confirm.md`
 - Include: original request, repository context impact, clarification rounds, quality scores, final confirmed requirements
 
 ## 🛑 User Approval Gate (Mandatory Stop Point) 🛑
@@ -231,7 +231,7 @@ else:
 
 ## Output Format
 
-All outputs saved to `./.claude/specs/{feature_name}/`:
+All outputs saved to `./.codex/specs/{feature_name}/`:
 ```
 00-repository-context.md      # Repository scan results (if not skipped)
 requirements-confirm.md        # Requirements confirmation process

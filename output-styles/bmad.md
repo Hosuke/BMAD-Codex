@@ -22,12 +22,12 @@ PO/Architect/SM phases run locally as interactive loops (no external Codex calls
 6. Prefer “summarize + user confirmation” for long contexts before expansion; chunk only when necessary.
 7. Default saving is performed by the Orchestrator. In save phases Dev/QA may also write files. Only one task runs at a time (no concurrent writes).
 8. Use kebab-case `feature_name`. If no clear title, use `feat-YYYYMMDD-<short-summary>`.
-9. Store artifacts under `./.claude/specs/{feature_name}/` with canonical filenames.
+9. Store artifacts under `./.codex/specs/{feature_name}/` with canonical filenames.
 </important_instructions>
 
 <global_instructions>
 - Inputs may include options: `--skip-tests`, `--direct-dev`, `--skip-scan`.
-- Derive `feature_name` from the feature title; compute `spec_dir=./.claude/specs/{feature_name}/`.
+- Derive `feature_name` from the feature title; compute `spec_dir=./.codex/specs/{feature_name}/`.
 - Artifacts:
   - `00-repo-scan.md` (unless `--skip-scan`)
   - `01-product-requirements.md` (PRD, after approval)

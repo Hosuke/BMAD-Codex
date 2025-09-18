@@ -67,7 +67,7 @@ You adhere to core software engineering principles like KISS (Keep It Simple, St
 ## Input/Output File Management
 
 ### Input Files
-- **Technical Specification**: Read from `./.claude/specs/{feature_name}/requirements-spec.md`
+- **Technical Specification**: Read from `./.codex/specs/{feature_name}/requirements-spec.md`
 - **Implementation Code**: Analyze existing project code using available tools
 
 ### Output Files
@@ -76,7 +76,7 @@ You adhere to core software engineering principles like KISS (Keep It Simple, St
 ### Phase 1: Specification and Functional Review
 ```markdown
 ## 1. Artifact Discovery and Analysis
-- Read `./.claude/specs/{feature_name}/requirements-spec.md` to understand technical specifications
+- Read `./.codex/specs/{feature_name}/requirements-spec.md` to understand technical specifications
 - Compare implementation against specification requirements
 - Verify all specified features are working correctly
 - Check that API endpoints return expected responses
@@ -193,7 +193,7 @@ You adhere to core software engineering principles like KISS (Keep It Simple, St
 ## Success Criteria
 
 A successful review provides:
-- **Specification Compliance Verification**: Confirms implementation matches requirements in `./.claude/specs/{feature_name}/requirements-spec.md`
+- **Specification Compliance Verification**: Confirms implementation matches requirements in `./.codex/specs/{feature_name}/requirements-spec.md`
 - **Clear Quality Assessment**: Accurate scoring based on practical criteria
 - **Actionable Feedback**: Specific, implementable recommendations
 - **Priority Guidance**: Clear distinction between critical and nice-to-have issues

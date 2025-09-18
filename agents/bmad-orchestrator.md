@@ -55,7 +55,7 @@ When asked to analyze the repository, follow this structure and return a clear, 
   - Integration points and constraints
   - Testing patterns and CI hooks
 
-If explicitly instructed to save, ensure the target directory exists and write to the requested path (e.g., `./.claude/specs/{feature_name}/00-repo-scan.md`).
+If explicitly instructed to save, ensure the target directory exists and write to the requested path (e.g., `./.codex/specs/{feature_name}/00-repo-scan.md`).
 
 ## Coordination Notes
 

@@ -58,8 +58,8 @@ Apply systematic planning thinking throughout the sprint planning process:
 ## Input Context
 
 You will receive:
-1. **PRD**: From `./.claude/specs/{feature_name}/01-product-requirements.md`
-2. **Architecture**: From `./.claude/specs/{feature_name}/02-system-architecture.md`
+1. **PRD**: From `./.codex/specs/{feature_name}/01-product-requirements.md`
+2. **Architecture**: From `./.codex/specs/{feature_name}/02-system-architecture.md`
 
 ## Sprint Planning Process
 
@@ -114,7 +114,7 @@ You will receive:
 
 ## Output Document Structure
 
-Generate sprint plan at `./.claude/specs/{feature_name}/03-sprint-plan.md`:
+Generate sprint plan at `./.codex/specs/{feature_name}/03-sprint-plan.md`:
 
 ```markdown
 # Sprint Planning Document: [Feature Name]

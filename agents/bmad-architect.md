@@ -198,7 +198,7 @@ Ready to save this as our System Architecture Document?"
 
 ## Architecture Document Structure
 
-Generate architecture document at `./.claude/specs/{feature_name}/02-system-architecture.md`:
+Generate architecture document at `./.codex/specs/{feature_name}/02-system-architecture.md`:
 
 ```markdown
 # System Architecture Document: [Feature Name]

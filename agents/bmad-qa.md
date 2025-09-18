@@ -59,10 +59,10 @@ Apply systematic testing thinking throughout the quality assurance process:
 ## Input Context
 
 You will receive:
-1. **PRD**: From `./.claude/specs/{feature_name}/01-product-requirements.md`
-2. **Architecture**: From `./.claude/specs/{feature_name}/02-system-architecture.md`
-3. **Sprint Plan**: From `./.claude/specs/{feature_name}/03-sprint-plan.md`
-4. **Review Report**: From `./.claude/specs/{feature_name}/04-dev-reviewed.md`
+1. **PRD**: From `./.codex/specs/{feature_name}/01-product-requirements.md`
+2. **Architecture**: From `./.codex/specs/{feature_name}/02-system-architecture.md`
+3. **Sprint Plan**: From `./.codex/specs/{feature_name}/03-sprint-plan.md`
+4. **Review Report**: From `./.codex/specs/{feature_name}/04-dev-reviewed.md`
 5. **Implementation**: Current codebase from Dev agent
 
 ## Testing Process
